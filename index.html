@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">MyPortfolio</div>
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Hello, My name is Anish Tamakhu</h1>
+        <p>As a junior web developer, I love creating clean, functional, and user-friendly websites.</p>
+        <p><a class="cta" href="#projects">See my work</a></p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I’m <b>Anish Tamakhu</b>, a BIT graduate from <b>Aryan School of Engineering and Management</b>, graduating in 2026. I completed my internship at <b>Youth Innovation Lab</b>, where I gained practical experience in web technologies and web development.
+            <br>
+            <p>I’m passionate about <b></b>technology, AI/ML, and software development</b>, with an interest in building practical and user-friendly digital solutions. I enjoy working with modern web technologies, developing projects, and continuously learning new tools and frameworks.</p>
+            <br>
+            <p>I’m always eager to improve my technical skills, take on new challenges, and explore opportunities where I can contribute, learn, and grow as an IT professional.</p>
+          </div>
+          <div class="about-photo">
+            <img src="images/about.jpg" alt="Anish Tamakhu" class="profile-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="card">
+            <h3>Project One</h3>
+            <p>Short description of the project. Tech stack: HTML, CSS, JS.</p>
+            <p><a href="#" target="_blank" rel="noopener">View project</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Project Two</h3>
+            <p>Short description of the project. Add links to GitHub and live demo.</p>
+            <p><a href="#" target="_blank" rel="noopener">View project</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Project Three</h3>
+            <p>Another project example. Replace with your real projects.</p>
+            <p><a href="#" target="_blank" rel="noopener">View project</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>HTML &amp; CSS</li>
+          <li>JavaScript (ES6+)</li>
+          <li>React</li>
+          <li>Node.js &amp; Express</li>
+          <li>Version Control (Git)</li>
+          <li>REST APIs</li>
+          <li>SQL &amp; NoSQL</li>
+          <li>Testing (Jest)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Want to work together? Send an email to <a href="mailto:abtamakhu99@gmail.com">abtamakhu99@gmail.com</a> or use the form below.</p>
+        <form class="contact-form" action="#">
+          <label>
+            Name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span>— Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
