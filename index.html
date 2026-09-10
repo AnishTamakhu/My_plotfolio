@@ -4,6 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Portfolio</title>
+  <link rel="canonical" href="https://www.anishtamakhu.com.np/">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,7 +19,7 @@
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
-      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">☰</button>
     </div>
   </header>
 
@@ -35,10 +37,8 @@
         <h2>About</h2>
         <div class="about-grid">
           <div class="about-text">
-            <p>I’m <b>Anish Tamakhu</b>, a BIT graduate from <b>Aryan School of Engineering and Management</b>, graduating in 2026. I completed my internship at <b>Youth Innovation Lab</b>, where I gained practical experience in web technologies and web development.
-            <br>
-            <p>I’m passionate about <b></b>technology, AI/ML, and software development</b>, with an interest in building practical and user-friendly digital solutions. I enjoy working with modern web technologies, developing projects, and continuously learning new tools and frameworks.</p>
-            <br>
+            <p>I’m <b>Anish Tamakhu</b>, a BIT graduate from <b>Aryan School of Engineering and Management</b>, graduating in 2026. I completed my internship at <b>Youth Innovation Lab</b>, where I gained practical experience in web technologies and web development.</p>
+            <p>I’m passionate about <b>technology, AI/ML, and software development</b>, with an interest in building practical and user-friendly digital solutions. I enjoy working with modern web technologies, developing projects, and continuously learning new tools and frameworks.</p>
             <p>I’m always eager to improve my technical skills, take on new challenges, and explore opportunities where I can contribute, learn, and grow as an IT professional.</p>
           </div>
           <div class="about-photo">
@@ -73,7 +73,7 @@
           <article class="card">
             <h3>Todo List</h3>
             <p>A responsive task manager with add, edit, delete, filtering, completion tracking, and localStorage persistence. Built with HTML, CSS, and JavaScript.</p>
-            <p><a href="https://github.com/AnishTamakhu/Todo_list" target="_blank" rel="noopener noreferrer">View project</a></p>
+            <p><a href="project/todo_list/index.html">Live demo</a> · <a href="https://github.com/AnishTamakhu/Todo_list" target="_blank" rel="noopener noreferrer">GitHub</a></p>
           </article>
         </div>
       </div>
@@ -98,7 +98,7 @@
     <section id="contact" class="section">
       <div class="container">
         <h2>Contact</h2>
-        <p>Want to work together? Send an email to <a href="mailto:abtamakhu99@gmail.com">abtamakhu99@gmail.com</a> or use the form below.</p>
+        <p class="contact-intro">Want to work together? Send an email to <a href="mailto:anishtamakhu98@gmail.com">anishtamakhu98@gmail.com</a> or use the form below.</p>
         <form class="contact-form" action="#">
           <label>
             Name
@@ -119,8 +119,23 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span>— Built with HTML, CSS &amp; JavaScript.</p>
+    <div class="container footer-content">
+      <div class="footer-socials" aria-label="Social links">
+        <a class="social-link github" href="https://github.com/AnishTamakhu" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+        <a class="social-link email" href="mailto:anishtamakhu98@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+        <a class="social-link instagram" href="https://www.instagram.com/anishtamakhu" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a class="social-link facebook" href="https://www.facebook.com/share/19Wm64My1a/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+        <a class="social-link website" href="https://www.anishtamakhu.com.np/" target="_blank" rel="noopener noreferrer" aria-label="Website"><i class="fa-solid fa-globe" aria-hidden="true"></i></a>
+      </div>
+      <h2>Anish Tamakhu</h2>
+      <p class="footer-tagline">Building practical, accessible, and user-friendly digital experiences.</p>
+      <div class="footer-contact">
+        <a href="mailto:anishtamakhu98@gmail.com">anishtamakhu98@gmail.com</a>
+        <a href="https://www.anishtamakhu.com.np/" target="_blank" rel="noopener noreferrer">www.anishtamakhu.com.np</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> Anish Tamakhu. All rights reserved.</p>
     </div>
   </footer>
 
